@@ -1,0 +1,189 @@
+
+.flex-container a:active, .flexslider a:active, .flex-container a:focus, .flexslider a:focus {
+    outline: medium none;
+}
+.slides, .flex-control-nav, .flex-direction-nav {
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: "flexslider-icon";
+    font-style: normal;
+    font-weight: normal;
+    src: url("fonts/flexslider-icon.eot?#iefix") format("embedded-opentype"), url("fonts/flexslider-icon.woff") format("woff"), url("fonts/flexslider-icon.ttf") format("truetype"), url("fonts/flexslider-icon.svg#flexslider-icon") format("svg");
+}
+.flexslider {
+    margin: 0;
+    padding: 0;
+}
+.flexslider .slides > li {
+    display: none;
+}
+.flexslider .slides img {
+    display: block;
+    width: 100%;
+}
+.flex-pauseplay span {
+    text-transform: capitalize;
+}
+.slides:after {
+    clear: both;
+    content: " ";
+    display: block;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+}
+html[xmlns] .slides {
+    display: block;
+}
+* html .slides {
+    height: 1%;
+}
+.no-js .slides > li:first-child {
+    display: block;
+}
+.flexslider {
+    margin: 0;
+    position: relative;
+}
+.flex-viewport {
+    max-height: 2000px;
+    transition: all 1s ease 0s;
+}
+.loading .flex-viewport {
+    max-height: 300px;
+}
+.flexslider .slides {
+}
+.carousel li {
+    margin-right: 5px;
+}
+.flex-direction-nav {
+}
+.flex-direction-nav a {
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    height: 66px;
+    margin: 0;
+    opacity: 1;
+    overflow: hidden;
+    position: absolute;
+    text-indent: -9999px;
+    top:40%;
+    width: 66px;
+    z-index: 10;
+}
+.flexslider:hover .flex-next:hover, .flexslider:hover .flex-prev:hover {
+    opacity: 1;
+}
+.flex-direction-nav .flex-disabled {
+    cursor: default;
+    opacity: 0 !important;
+}
+.flex-direction-nav a:before {
+}
+.flex-direction-nav a.flex-next:before {
+}
+.flex-pauseplay a {
+    bottom: 5px;
+    color: #000000;
+    cursor: pointer;
+    display: block;
+    height: 20px;
+    left: 10px;
+    opacity: 0.8;
+    overflow: hidden;
+    position: absolute;
+    width: 20px;
+    z-index: 10;
+}
+.flex-pauseplay a:before {
+    content: "";
+    display: inline-block;
+    font-family: "flexslider-icon";
+    font-size: 20px;
+}
+.flex-pauseplay a:hover {
+    opacity: 1;
+}
+.flex-pauseplay a.flex-play:before {
+    content: "";
+}
+.flex-control-nav {
+    bottom:23px;
+    position: absolute;
+    text-align: center;
+  left:60px; z-index:3;
+}
+.flex-control-nav li {
+    display: inline-block;
+    margin: 0 2px;
+}
+.flex-control-paging li a {
+    background: none;
+    border-radius: 20px;
+ border:2px solid #fff;
+ -webkit-border-radius: 20px;
+-moz-border-radius: 20px;
+border-radius: 20px;
+    cursor: pointer;
+    display: block;
+    height:10px;
+    text-indent: -9999px;
+    width: 10px;
+}
+.flex-control-paging li a:hover {
+    background: #fff;
+}
+.flex-control-paging li a.flex-active {
+    background: #fff;
+    cursor: default;
+}
+.flex-control-thumbs {
+    margin: 5px 0 0;
+    overflow: hidden;
+    position: static;
+}
+.flex-control-thumbs li {
+    float: left;
+    margin: 0;
+    width: 25%;
+}
+.flex-control-thumbs img {
+    cursor: pointer;
+    display: block;
+    opacity: 0.7;
+    width: 100%;
+}
+.flex-control-thumbs img:hover {
+    opacity: 1;
+}
+.flex-control-thumbs .flex-active {
+    cursor: default;
+    opacity: 1;
+}
+@media screen and (max-width: 860px) {
+.flex-direction-nav .flex-prev {
+    left: 10px;
+    opacity: 1;
+}
+.flex-direction-nav .flex-next {
+    opacity: 1;
+    right: 10px;
+}
+}
+
+.flex-direction-nav .flex-prev {
+    background: url("images/arrowL.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    left: 10px;
+}
+.flex-direction-nav .flex-next {
+    background: url("images/arrowR.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    right: 10px;
+}
+.flex-direction-nav li a {
+    display: block !important;
+}
